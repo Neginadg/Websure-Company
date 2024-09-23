@@ -8,7 +8,7 @@
 }
 
 .hero {
-  height: 100vh;
+  height: 900px;
   background-size: cover;
   background-position: center;
 
@@ -74,7 +74,7 @@ nav a {
 .hero-content {
   display: flex;
   align-content: center;
-  margin-top: 100px;
+  margin-top: 160px;
 }
 
 main {
@@ -92,7 +92,7 @@ main {
 }
 .hero-heading h1 {
   margin-bottom: 20px;
-  font-size: 48px;
+  font-size: 5rem;
   font-weight: 700;
 }
 .hero-heading h1 span {
@@ -117,23 +117,18 @@ main {
 .hero-heading h3 {
   color: #abe6ee;
   padding-left: 20px;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 300;
 }
 .hero-heading h2 span {
   margin-bottom: 5px;
 }
 .hero-img {
-  width: 480px;
-  /* border-radius: 50%; */
+  width: 600px;
   mix-blend-mode: inherit;
 }
 .hero-img img {
   width: 100%;
-}
-
-.copy {
-  background-color: #086fac;
 }
 .body-content1 {
   background: rgb(179, 197, 245);
@@ -142,14 +137,11 @@ main {
     rgba(179, 197, 245, 1) 0%,
     rgba(83, 168, 237, 1) 100%
   );
-  /* border-top: #460da2 solid 0px; */
-  /* margin-top: 150px; */
 }
 .body-content1 .about {
-  padding: 60px 60px;
+  padding: 160px 180px;
   text-align: center;
   display: flex;
-  /* align-items: center; */
   gap: 200px;
 }
 .body-content1 .about .left {
@@ -160,7 +152,8 @@ main {
   gap: 40px;
 }
 .body-content1 .about .left h2 {
-  font-size: 48px;
+  font-size: 4rem;
+  font-weight: 500;
   background: linear-gradient(
     0deg,
     rgba(11, 17, 57, 1) 20%,
@@ -170,6 +163,12 @@ main {
   color: transparent;
   -webkit-background-clip: text;
 }
+.body-content1 .about .left button {
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+}
 .body-content1 .about .right {
   text-align: left;
   display: flex;
@@ -178,7 +177,8 @@ main {
   gap: 30px;
 }
 .body-content1 .about .right h3 {
-  font-size: 32px;
+  font-size: 3rem;
+  font-weight: 400;
   background: linear-gradient(
     0deg,
     rgba(11, 17, 57, 1) 20%,
@@ -189,7 +189,8 @@ main {
   -webkit-background-clip: text;
 }
 .body-content1 .about .right p {
-  font-size: 18px;
+  font-size: 1.6rem;
+  font-weight: 300;
 }
 button {
   background-color: #086fac;
@@ -220,7 +221,7 @@ button:active {
 }
 .body-content2 {
   text-align: center;
-  padding: 100px 200px;
+  padding: 160px 180px;
   color: #fff;
   background: linear-gradient(
     0deg,
@@ -233,10 +234,14 @@ button:active {
   gap: 60px;
 }
 .body-content2 h2 {
-  font-size: 48px;
+  font-size: 4rem;
+  font-weight: 400;
 }
 .body-content2 p {
-  font-size: 18px;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: .5px;
+  line-height: 1.6;
   margin-bottom: 40px;
 }
 .info-boxes {
@@ -266,4 +271,30 @@ button:active {
 }
 .active-box {
   background-color: rgb(53, 62, 126);
+}
+
+
+
+
+
+footer {
+  color: #fff;
+  background-color: #086fac;
+  padding: 160px 180px;
+  display: grid;
+  grid-template-columns: 4;
+  grid-template-rows: 3;
+  justify-items: start;
+}
+footer h4 {
+  width: 50%;
+  font-size: 1.5rem;
+  grid-row: 1/2;
+  margin-bottom: 4rem;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  margin-bottom: 1.5rem;
 }
