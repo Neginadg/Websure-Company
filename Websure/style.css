@@ -176,6 +176,10 @@ main {
     rgba(179, 197, 245, 1) 0%,
     rgba(83, 168, 237, 1) 100%
   );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .body-content1 .about {
@@ -194,7 +198,7 @@ main {
 }
 
 .body-content1 .about .left h2 {
-  font-size: 4rem;
+  font-size: 7vh;
   font-weight: 500;
   background: linear-gradient(
     0deg,
@@ -207,10 +211,10 @@ main {
 }
 
 .body-content1 .about .left button {
-  font-size: 2rem;
+  font-size: 2vh;
   font-weight: 400;
-  padding: 1rem 2rem;
-  border-radius: 3rem;
+  padding: 1em;
+  border-radius: 1em;
 }
 
 .body-content1 .about .right {
@@ -222,7 +226,7 @@ main {
 }
 
 .body-content1 .about .right h3 {
-  font-size: 3rem;
+  font-size: 5vh;
   font-weight: 400;
   background: linear-gradient(
     0deg,
@@ -235,15 +239,15 @@ main {
 }
 
 .body-content1 .about .right p {
-  font-size: 1.6rem;
+  font-size: 2vh;
   font-weight: 300;
 }
 
 button {
   background-color: #086fac;
   color: #f0e5eb;
-  padding: 1rem 1.6rem;
-  border-radius: 2rem;
+  padding: 1em;
+  border-radius: 1em;
   border: none;
   letter-spacing: 0.05rem;
   font-size: 1.6rem;
@@ -281,18 +285,19 @@ button:active {
     rgba(49, 105, 134, 1) 88%
   );
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  gap: 6rem;
+  gap: 10rem;
 }
 
 .body-content2 h2 {
-  font-size: 4rem;
+  font-size: 7vh;
   font-weight: 400;
 }
 
 .body-content2 p {
-  font-size: 2rem;
+  font-size: 2.5vh;
   font-weight: 300;
   letter-spacing: 0.05rem;
   line-height: 1.6;
@@ -303,6 +308,10 @@ button:active {
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+
+.info-boxes .box p {
+  font-size: 3vh;
 }
 
 .box {
