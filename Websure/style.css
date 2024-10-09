@@ -16,7 +16,7 @@ html {
 } */
 
 .hero {
-  height: 90rem;
+  height: 100vh;
   background-size: cover;
   background-position: center;
 
@@ -29,16 +29,8 @@ html {
   );
 
   display: flex;
-  align-items: center;
-  justify-content: center;
+flex-direction: column;
   position: relative;
-}
-
-.main-header {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
 }
 
 .hero,
@@ -107,9 +99,10 @@ nav a {
 }
 
 .hero-content {
+  height: 100%;
   display: flex;
   align-content: center;
-  /* margin-top: 16rem; */
+  justify-content: center;
 }
 
 main {
