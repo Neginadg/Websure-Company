@@ -27,6 +27,18 @@ html {
     rgba(23, 30, 74, 1) 57%,
     rgba(49, 105, 134, 1) 88%
   );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.main-header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 .hero,
@@ -97,7 +109,7 @@ nav a {
 .hero-content {
   display: flex;
   align-content: center;
-  margin-top: 16rem;
+  /* margin-top: 16rem; */
 }
 
 main {
@@ -118,7 +130,7 @@ main {
 
 .hero-heading h1 {
   margin-bottom: 2rem;
-  font-size: 7rem;
+  font-size: 100%;
   font-weight: 700;
 }
 
