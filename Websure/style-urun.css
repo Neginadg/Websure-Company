@@ -7,7 +7,14 @@
 
 .hero {
   height: 100vh;
-  background: url("./images/hero-background.jpeg");
+
+  background: rgb(11, 17, 57);
+  background: linear-gradient(
+    0deg,
+    rgba(11, 17, 57, 1) 20%,
+    rgba(23, 30, 74, 1) 57%,
+    rgba(49, 105, 134, 1) 88%
+  );
   background-size: cover;
   background-position: center;
 }
