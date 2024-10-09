@@ -393,11 +393,11 @@ footer ul li a {
   color: #222;
 }
 
-.copy {
+/* .copy {
   font-weight: 300;
   letter-spacing: 0.2px;
   font-size: 1.25rem;
-}
+} */
 .social-links {
   display: flex;
   align-items: center;
