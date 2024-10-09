@@ -209,6 +209,58 @@ h1 span {
   unicode-bidi: isolate;
   width: 1280px;
 }
-.copy {
+/* .copy {
   background-color: #086fac;
+} */
+
+footer {
+  height: 50vh;
+  color: #222;
+  background-color: #f7f7f7;
+  padding: 10em 8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30em;
+}
+.footer-items {
+  display: flex;
+  justify-content: center;
+  gap: 15em;
+}
+.footer-creds {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+}
+footer .logo-box h1 {
+  font-size: 2.4em;
+  color: #222;
+}
+footer .logo-box img {
+  filter: none;
+  width: 6rem;
+  height: auto;
+}
+footer h4 {
+  width: 75%;
+  font-weight: 500;
+  font-size: 2rem;
+  grid-row: 1 / 2;
+  margin-bottom: 2rem;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+footer ul li a {
+  color: #222;
 }
