@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 html {
   font-size: 62.5%;
 }
@@ -25,17 +27,18 @@ html {
 .logo-box {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
 }
+
 .logo-img {
-  width: 75px;
+  width: 7.5rem;
   height: auto;
-  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.7));
   border-radius: 50%;
-  mix-blend-mode: hard-light;
 }
+
 .logo-name {
-  font-size: 32px;
+  font-size: 3.2rem;
   font-style: italic;
 }
 a {
