@@ -1,3 +1,7 @@
+html {
+  font-size: 62.5%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -109,10 +113,16 @@ h1 span {
 .hero-img img {
   width: 100%;
 }
-/* .copy {
-  background-color: #086fac;
-} */
-
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Set height as needed */
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 footer {
   height: 50vh;
   color: #222;
@@ -163,4 +173,27 @@ footer ul li {
 
 footer ul li a {
   color: #222;
+}
+
+/* .copy {
+  font-weight: 300;
+  letter-spacing: 0.2px;
+  font-size: 1.25rem;
+} */
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.social-links h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.social-links img {
+  width: 4em;
+  height: 4em;
+}
+.social-links .email img {
+  width: 4.7em;
+  height: 4.7em;
 }

@@ -29,7 +29,7 @@ html {
   );
 
   display: flex;
-flex-direction: column;
+  flex-direction: column;
   position: relative;
 }
 
@@ -349,7 +349,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30em;
+  gap: 20em;
 }
 .footer-items {
   display: flex;
