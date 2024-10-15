@@ -300,7 +300,7 @@ button:active {
 }
 
 .info-boxes {
-  display: flex;
+  display: block;
   justify-content: center;
   gap: 2rem;
 }
