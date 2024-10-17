@@ -57,6 +57,14 @@ a {
   text-decoration: none;
 }
 
+a#logo {
+  display: none !important;
+}
+
+#logo::after {
+  content: "IDK";
+}
+
 nav {
   background-color: rgba(154, 210, 248, 0.1);
   padding: 2rem 0;
