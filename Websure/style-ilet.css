@@ -92,21 +92,48 @@ nav a {
   display: flex;
   gap: 3rem;
 }
+.contact-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
 
-.hero-content {
+.contact-container h2 {
+  color: #0073e6;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-item {
+  margin-bottom: 20px;
+}
+
+.contact-item h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.icon {
+  color: #0073e6; /* Blue color for the icons */
+  margin-right: 10px;
+}
+
+/* .hero-content {
   height: 100%;
   display: flex;
   align-content: center;
   justify-content: center;
 }
-
-main {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
 .hero-heading {
   font-size: 10rem;
   padding: 0 8rem;
@@ -154,19 +181,19 @@ main {
 .hero-heading h2 span {
   margin-bottom: 0.5rem;
 }
-
-.hero-img {
-  width: 70vh;
-  mix-blend-mode: inherit;
-}
-
-.hero-img img {
-  width: 100%;
-}
+.contact {
+  font-size: 5vh;
+  color: rgb(2, 30, 83);
+  color: radial-gradient(
+    circle,
+    rgba(2, 30, 83, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+} */
 .map-container {
   position: relative;
   width: 100%;
-  height: 400px; /* Set height as needed */
+  height: 400px;
 }
 iframe {
   width: 100%;

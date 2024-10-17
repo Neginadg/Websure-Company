@@ -56,6 +56,28 @@ a {
   color: #fff;
   text-decoration: none;
 }
+.language-switch {
+  text-align: center;
+  margin: 20px 0;
+}
+.language-switch button {
+  background-color: transparent;
+  color: #f0e5eb;
+  /* padding: 10px 20px;
+  margin: 0 10px; */
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.language-switch button:hover {
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.language-switch button:focus {
+  box-shadow: none;
+  transform: none;
+}
 
 a#logo {
   display: none !important;
@@ -70,23 +92,23 @@ nav {
   padding: 2rem 0;
   display: flex;
   align-items: center;
-  gap: 20rem;
+  /* gap: 20rem; */
   justify-content: space-around;
 }
 
 nav a {
   color: #f0e5eb;
   font-size: 1.8rem;
-  display: flex;
+  /* display: flex; */
   align-items: center;
-  gap: 0.7rem;
+  gap: 20rem;
   text-decoration: none;
   padding: 0.8rem 1.2rem;
   border-radius: 0.8rem;
   transition: all 0.2s ease;
 }
 
-.nav-links a:hover {
+.nav_links a:hover {
   background-color: rgb(255, 255, 255, 0.2);
 }
 
@@ -96,9 +118,10 @@ nav a {
   justify-content: center;
 }
 
-.nav-links {
+.nav_links {
   display: flex;
-  gap: 3rem;
+  flex-direction: row;
+  gap: 5rem;
 }
 
 .hero-content {
@@ -258,7 +281,7 @@ button {
   transition: all 0.2s;
 }
 
-button:hover,
+button:not([id$="-btn"]):hover,
 button:focus {
   transform: scale(1.05) translateY(-0.2rem);
   box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -266,7 +289,7 @@ button:focus {
   outline: none;
 }
 
-button:active {
+button:not([id$="-btn"]):active {
   transform: translateY(-0.1rem) scale(1);
   box-shadow: 0px 0.3rem 0.7rem rgba(0, 0, 0, 0.4);
   cursor: pointer;
@@ -308,7 +331,7 @@ button:active {
 }
 
 .info-boxes {
-  display: flex;
+  display: block;
   justify-content: center;
   gap: 2rem;
 }
