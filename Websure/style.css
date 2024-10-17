@@ -15,14 +15,12 @@ html {
   height: 100vh;
   background-size: cover;
   background-position: center;
-
-  background: rgb(0, 0, 0);
-  background: radial-gradient(
-    circle,
-    rgba(0, 4, 9, 1) 90%,
-    rgba(3, 166, 214, 1) 100%
+  background: rgb(2, 131, 185);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 131, 185, 0.8) 0%,
+    rgba(5, 4, 0, 1) 12%
   );
-
   display: flex;
   flex-direction: column;
 }
@@ -193,11 +191,11 @@ main {
 }
 
 .body-content1 {
-  background: rgb(179, 197, 245);
-  background: radial-gradient(
-    circle,
-    rgba(179, 197, 245, 1) 0%,
-    rgba(83, 168, 237, 1) 100%
+  /* background: rgba(2, 131, 185, 0.8); */
+  background: linear-gradient(
+    180deg,
+    rgba(2, 131, 185, 0.8) 40%,
+    rgb(0, 0, 0) 100%
   );
 
   display: flex;
@@ -206,7 +204,7 @@ main {
 }
 
 .body-content1 .about {
-  padding: 16rem 18rem;
+  padding: 8rem 18rem 0rem;
   text-align: center;
   display: flex;
   gap: 20rem;
@@ -223,14 +221,15 @@ main {
 .body-content1 .about .left h2 {
   font-size: 7vh;
   font-weight: 500;
-  background: linear-gradient(
+  /* background: linear-gradient(
     0deg,
     rgba(11, 17, 57, 1) 20%,
     rgba(30, 35, 64, 1) 57%,
     rgb(11, 61, 86) 88%
   );
   color: transparent;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; */
+  color: #fff;
 }
 
 .body-content1 .about .left button {
@@ -259,15 +258,17 @@ main {
   );
   color: transparent;
   -webkit-background-clip: text;
+  color: #fff;
 }
 
 .body-content1 .about .right p {
   font-size: 2vh;
   font-weight: 300;
+  color: #fff;
 }
 
 button {
-  background-color: #086fac;
+  background-color: rgba(133, 224, 252, 0.2);
   color: #f0e5eb;
   padding: 1em;
   border-radius: 1em;
@@ -302,10 +303,9 @@ button:not([id$="-btn"]):active {
   padding: 16rem 18rem;
   color: #fff;
   background: linear-gradient(
-    0deg,
-    rgba(11, 17, 57, 1) 20%,
-    rgba(23, 30, 74, 1) 57%,
-    rgba(49, 105, 134, 1) 88%
+    180deg,
+    rgb(0, 0, 0) 20%,
+    /* rgba(23, 30, 74, 1) 57%, */ rgba(2, 131, 185, 0.8) 88%
   );
   display: flex;
   align-items: center;
@@ -341,7 +341,7 @@ button:not([id$="-btn"]):active {
   width: 40rem;
   padding: 0.8rem 1.6rem;
   border-radius: 1rem;
-  background-color: rgba(23, 30, 74, 1);
+  background-color: rgba(8, 8, 8, 0.2);
   transition: all 0.35s;
   display: flex;
   justify-content: center;
@@ -356,18 +356,23 @@ button:not([id$="-btn"]):active {
 
 .box:hover {
   transform: scale(1.1);
-  background-color: rgb(80, 89, 160);
+  background-color: rgb(144, 212, 252);
   cursor: pointer;
 }
 
 .active-box {
-  background-color: rgb(53, 62, 126);
+  background-color: rgb(144, 212, 252);
 }
 
 footer {
   height: 50vh;
   color: #222;
   background-color: #f7f7f7;
+  background: linear-gradient(
+    180deg,
+    rgba(2, 131, 185, 0.8) 0%,
+    rgba(255, 255, 255) 100%
+  );
   padding: 10em 8em;
   display: flex;
   align-items: center;

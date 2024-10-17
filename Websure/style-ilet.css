@@ -57,11 +57,13 @@ a {
 }
 
 nav {
-  background-color: rgba(154, 210, 248, 0.1);
+  background-color: transparent;
   padding: 2rem 0;
   display: flex;
   align-items: center;
-  gap: 20rem;
+  border-bottom: 1px solid #1f7e9b;
+  width: 90%;
+  /* gap: 20rem; */
   justify-content: space-around;
 }
 
@@ -123,7 +125,7 @@ nav a {
 }
 
 .icon {
-  color: #0073e6; /* Blue color for the icons */
+  color: #0073e6;
   margin-right: 10px;
 }
 
@@ -201,8 +203,13 @@ iframe {
 }
 footer {
   height: 50vh;
-  color: #222;
-  background-color: #f7f7f7;
+  color: #d1eefc;
+  background: rgba(3, 166, 214, 1) 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(3, 166, 214, 1) 0%,
+    rgba(5, 4, 0, 1) 7%
+  );
   padding: 10em 8em;
   display: flex;
   align-items: center;
@@ -222,7 +229,7 @@ footer {
 }
 footer .logo-box h1 {
   font-size: 2.4em;
-  color: #222;
+  color: #d1eefc;
 }
 footer .logo-box img {
   filter: none;
@@ -248,7 +255,7 @@ footer ul li {
 }
 
 footer ul li a {
-  color: #222;
+  color: #d1eefc;
 }
 
 /* .copy {
