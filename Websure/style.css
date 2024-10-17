@@ -16,12 +16,11 @@ html {
   background-size: cover;
   background-position: center;
 
-  background: rgb(11, 17, 57);
-  background: linear-gradient(
-    0deg,
-    rgba(11, 17, 57, 1) 20%,
-    rgba(23, 30, 74, 1) 57%,
-    rgba(49, 105, 134, 1) 88%
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 4, 9, 1) 90%,
+    rgba(3, 166, 214, 1) 100%
   );
 
   display: flex;
@@ -78,6 +77,10 @@ a {
   box-shadow: none;
   transform: none;
 }
+.main-header {
+  display: flex;
+  justify-content: center;
+}
 
 a#logo {
   display: none !important;
@@ -88,10 +91,12 @@ a#logo {
 }
 
 nav {
-  background-color: rgba(154, 210, 248, 0.1);
+  background-color: transparent;
   padding: 2rem 0;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #1f7e9b;
+  width: 90%;
   /* gap: 20rem; */
   justify-content: space-around;
 }
