@@ -56,11 +56,13 @@ a {
 }
 
 nav {
-  background-color: rgba(154, 210, 248, 0.1);
+  background-color: transparent;
   padding: 2rem 0;
   display: flex;
   align-items: center;
-  gap: 20rem;
+  border-bottom: 1px solid #1f7e9b;
+  width: 90%;
+  /* gap: 20rem; */
   justify-content: space-around;
 }
 
@@ -184,6 +186,11 @@ main {
 
 .hero-img img {
   width: 100%;
+}
+
+.part1 {
+  font-size: 32px;
+  color: #f0e5eb;
 }
 
 footer {
