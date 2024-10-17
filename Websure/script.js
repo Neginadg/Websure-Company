@@ -13,12 +13,16 @@ const translations = {
     nav_links2: "Hakkımızda",
     nav_links3: "İletişim",
     hero_contentL1: "Sigorta İnovasyonunu",
+    hero_contentL2: "8 Yıldır",
+    hero_contentL3: "Güçlendiriyoruz",
   },
   en: {
     nav_links1: "Products",
     nav_links2: "About us",
     nav_links3: "Contact us",
-    hero_contentL1: "We have been",
+    hero_contentL1: "Insurance innovation",
+    hero_contentL2: "For 8 years",
+    hero_contentL3: "And still going",
   },
 };
 
@@ -33,6 +37,10 @@ function updateContent(language) {
     translations[language].nav_links3;
   document.querySelector(".hero_contentL1").innerHTML =
     translations[language].hero_contentL1;
+  document.querySelector(".hero_contentL2").innerHTML =
+    translations[language].hero_contentL2;
+  document.querySelector(".hero_contentL3").innerHTML =
+    translations[language].hero_contentL3;
 }
 
 document.getElementById("turkish-btn").addEventListener("click", () => {
