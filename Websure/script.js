@@ -9,15 +9,17 @@ boxes.forEach((box) => {
 });
 const translations = {
   tr: {
-    nav_links1: "Ürünler",
-    nav_links2: "Hakkımızda",
-    nav_links3: "İletişim",
+    nav_links1: "Ana sayfa",
+    nav_links2: "Ürünler",
+    nav_links3: "Hakkımızda",
+    nav_links4: "İletişim",
     hero_contentL1: "Sigorta İnovasyonunu",
   },
   en: {
-    nav_links1: "Products",
-    nav_links2: "About us",
-    nav_links3: "Contact us",
+    nav_links1: "Home Page",
+    nav_links2: "Products",
+    nav_links3: "About us",
+    nav_links4: "Contact us",
     hero_contentL1: "We have been",
   },
 };
