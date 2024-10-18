@@ -19,7 +19,7 @@ html {
   background: linear-gradient(
     0deg,
     rgba(2, 131, 185, 0.8) 0%,
-    rgba(5, 4, 0, 1) 12%
+    rgba(5, 4, 0, 1) 50%
   );
   display: flex;
   flex-direction: column;
@@ -54,27 +54,28 @@ a {
   text-decoration: none;
 }
 .language-switch {
+  display: flex;
+  gap: 1rem;
   text-align: center;
   margin: 20px 0;
 }
 .language-switch button {
+  display: flex;
+  align-items: center;
   background-color: transparent;
   color: #f0e5eb;
+  padding: 0;
   /* padding: 10px 20px;
   margin: 0 10px; */
   cursor: pointer;
   border-radius: 8px;
 }
 
-.language-switch button:hover {
-  box-shadow: none;
-  background-color: rgba(255, 255, 255, 0.2);
+.language-switch button img {
+  width: 30px;
+  height: auto;
 }
 
-.language-switch button:focus {
-  box-shadow: none;
-  transform: none;
-}
 .main-header {
   display: flex;
   justify-content: center;
@@ -201,11 +202,7 @@ main {
 
 .body-content1 {
   /* background: rgba(2, 131, 185, 0.8); */
-  background: linear-gradient(
-    180deg,
-    rgba(2, 131, 185, 0.8) 40%,
-    rgb(0, 0, 0) 100%
-  );
+  background: linear-gradient(180deg, #0283b9cc 50%, rgb(0, 0, 0) 100%);
 
   display: flex;
   align-items: center;
@@ -213,9 +210,10 @@ main {
 }
 
 .body-content1 .about {
-  padding: 8rem 18rem 0rem;
+  padding: 0rem 8rem;
   text-align: center;
   display: flex;
+  justify-content: center;
   gap: 20rem;
 }
 
@@ -256,8 +254,8 @@ main {
   gap: 3rem;
 }
 
-.body-content1 .about .right h3 {
-  font-size: 5vh;
+.body-content1 .about .right h2 {
+  font-size: 6vh;
   font-weight: 400;
   background: linear-gradient(
     0deg,
@@ -271,9 +269,15 @@ main {
 }
 
 .body-content1 .about .right p {
-  font-size: 2vh;
+  font-size: 3vh;
+  letter-spacing: 0.3px;
+  line-height: 1.5;
   font-weight: 300;
   color: #fff;
+}
+
+.section-img {
+  width: 70vh;
 }
 
 button {
@@ -313,8 +317,8 @@ button:not([id$="-btn"]):active {
   color: #fff;
   background: linear-gradient(
     180deg,
-    rgb(0, 0, 0) 20%,
-    /* rgba(23, 30, 74, 1) 57%, */ rgba(2, 131, 185, 0.8) 88%
+    rgb(0, 0, 0) 50%,
+    /* rgba(23, 30, 74, 1) 57%, */ rgba(2, 131, 185, 0.8) 100%
   );
   display: flex;
   align-items: center;
@@ -350,7 +354,8 @@ button:not([id$="-btn"]):active {
   width: 40rem;
   padding: 0.8rem 1.6rem;
   border-radius: 1rem;
-  background-color: rgba(8, 8, 8, 0.2);
+  backdrop-filter: blur(10rem);
+  background-color: rgba(255, 255, 255, 0.1);
   transition: all 0.35s;
   display: flex;
   justify-content: center;
@@ -365,7 +370,7 @@ button:not([id$="-btn"]):active {
 
 .box:hover {
   transform: scale(1.1);
-  background-color: rgb(144, 212, 252);
+  background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
 
