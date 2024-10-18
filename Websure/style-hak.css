@@ -100,11 +100,35 @@ nav a {
   justify-content: center;
 }
 
+.logo-container {
+  width: 80%;
+  padding: 16rem 0;
+  display: grid;
+  place-items: center;
+  align-items: center;
+  justify-items: start;
+  row-gap: 1rem;
+  column-gap: 2rem;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.logo-container img {
+  width: 20rem;
+  height: auto;
+}
+
 main {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  background-color: black;
 }
 
 .hero-heading {
@@ -163,6 +187,7 @@ main {
 .hero-img img {
   width: 100%;
 }
+
 .part1 {
   font-size: 32px;
   color: #f0e5eb;
