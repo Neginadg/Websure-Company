@@ -54,7 +54,6 @@ a {
   color: #fff;
   text-decoration: none;
 }
-
 .language-switch {
   display: flex;
   gap: 1rem;
@@ -67,6 +66,7 @@ a {
   background-color: transparent;
   color: #f0e5eb;
   padding: 0;
+  border: none;
   /* padding: 10px 20px;
   margin: 0 10px; */
   cursor: pointer;
@@ -97,28 +97,31 @@ nav {
 nav a {
   color: #f0e5eb;
   font-size: 1.8rem;
-  display: flex;
+  /* display: flex; */
   align-items: center;
-  gap: 0.7rem;
+  gap: 20rem;
   text-decoration: none;
   padding: 0.8rem 1.2rem;
   border-radius: 0.8rem;
   transition: all 0.2s ease;
 }
 
-.nav-links a:hover {
+.nav_links a:hover {
   background-color: rgb(255, 255, 255, 0.2);
 }
 
 .nav-icon {
+  color: white;
   width: 1.5rem;
   height: 1.5rem;
   justify-content: center;
 }
 
-.nav-links {
+.nav_links {
+  margin-left: 16rem;
   display: flex;
-  gap: 3rem;
+  flex-direction: row;
+  gap: 5rem;
 }
 
 .hero {

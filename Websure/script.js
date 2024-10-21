@@ -18,9 +18,10 @@ const translations = {
     hero_contentL3: "Güçlendiriyoruz",
   },
   en: {
-    nav_links1: "Products",
-    nav_links2: "About us",
-    nav_links3: "Contact us",
+    nav_links1: "Home",
+    nav_links2: "Products",
+    nav_links3: "About us",
+    nav_links4: "Contact us",
     hero_contentL1: "Insurance innovation",
     hero_contentL2: "For 8 years",
     hero_contentL3: "And still going",
@@ -36,6 +37,8 @@ function updateContent(language) {
     translations[language].nav_links2;
   document.querySelector(".nav_links3").innerHTML =
     translations[language].nav_links3;
+  document.querySelector(".nav_links4").innerHTML =
+    translations[language].nav_links4;
   document.querySelector(".hero_contentL1").innerHTML =
     translations[language].hero_contentL1;
   document.querySelector(".hero_contentL2").innerHTML =
