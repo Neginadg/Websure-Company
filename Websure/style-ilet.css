@@ -15,18 +15,15 @@ html {
   height: 100vh;
   background-size: cover;
   background-position: center;
-
-  background: rgb(0, 0, 0);
-  background: radial-gradient(
-    circle,
-    rgba(0, 4, 9, 1) 90%,
-    rgba(3, 166, 214, 1) 100%
+  background: rgb(2, 131, 185);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 131, 185, 0.8) 0%,
+    rgba(5, 4, 0, 1) 50%
   );
-
   display: flex;
   flex-direction: column;
 }
-
 .hero,
 .body-content1,
 .body-content2 {
@@ -56,6 +53,34 @@ a {
   text-decoration: none;
 }
 
+.language-switch {
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  margin: 20px 0;
+}
+.language-switch button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: #f0e5eb;
+  padding: 0;
+  /* padding: 10px 20px;
+  margin: 0 10px; */
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.language-switch button img {
+  width: 30px;
+  height: auto;
+}
+
+.main-header {
+  display: flex;
+  justify-content: center;
+}
+
 nav {
   background-color: transparent;
   padding: 2rem 0;
@@ -70,29 +95,33 @@ nav {
 nav a {
   color: #f0e5eb;
   font-size: 1.8rem;
-  display: flex;
+  /* display: flex; */
   align-items: center;
-  gap: 0.7rem;
+  gap: 20rem;
   text-decoration: none;
   padding: 0.8rem 1.2rem;
   border-radius: 0.8rem;
   transition: all 0.2s ease;
 }
 
-.nav-links a:hover {
+.nav_links a:hover {
   background-color: rgb(255, 255, 255, 0.2);
 }
 
 .nav-icon {
+  color: white;
   width: 1.5rem;
   height: 1.5rem;
   justify-content: center;
 }
 
-.nav-links {
+.nav_links {
+  margin-left: 16rem;
   display: flex;
-  gap: 3rem;
+  flex-direction: row;
+  gap: 5rem;
 }
+
 .contact-container {
   background-color: rgba(255, 255, 255, 0.025);
   backdrop-filter: blur(10px);
@@ -149,20 +178,21 @@ iframe {
   height: 100%;
   border: none;
 }
+
 footer {
   height: 50vh;
-  color: #d1eefc;
-  background: rgba(3, 166, 214, 1) 100%;
+  color: #222;
+  background-color: #f7f7f7;
   background: linear-gradient(
-    90deg,
-    rgba(3, 166, 214, 1) 0%,
-    rgba(5, 4, 0, 1) 7%
+    180deg,
+    rgba(2, 131, 185, 0.8) 0%,
+    rgba(255, 255, 255) 100%
   );
   padding: 10em 8em;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30em;
+  gap: 20em;
 }
 .footer-items {
   display: flex;
@@ -177,7 +207,7 @@ footer {
 }
 footer .logo-box h1 {
   font-size: 2.4em;
-  color: #d1eefc;
+  color: #222;
 }
 footer .logo-box img {
   filter: none;
@@ -203,9 +233,8 @@ footer ul li {
 }
 
 footer ul li a {
-  color: #d1eefc;
+  color: #222;
 }
-
 .social-links {
   display: flex;
   align-items: center;

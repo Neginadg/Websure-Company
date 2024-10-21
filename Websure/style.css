@@ -451,11 +451,6 @@ footer ul li a {
   color: #222;
 }
 
-/* .copy {
-  font-weight: 300;
-  letter-spacing: 0.2px;
-  font-size: 1.25rem;
-} */
 .social-links {
   display: flex;
   align-items: center;
@@ -486,20 +481,16 @@ iframe {
   height: 50vh;
 }
 
-/* Default state: hidden and transparent */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
-
-/* Fade in when the element becomes visible */
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Slide in from the left */
 .slide-in-left {
   opacity: 0;
   transform: translateX(-10%);
@@ -511,7 +502,6 @@ iframe {
   transform: translateX(0);
 }
 
-/* Slide in from the right */
 .slide-in-right {
   opacity: 0;
   transform: translateX(10%);
