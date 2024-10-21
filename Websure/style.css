@@ -124,6 +124,7 @@ nav a {
   display: flex;
   align-content: center;
   justify-content: center;
+  margin-right: 50rem;
 }
 
 main {
@@ -182,17 +183,11 @@ main {
 }
 
 .hero-img {
-  width: 70vh;
-  mix-blend-mode: inherit;
-}
-
-.hero-img img {
-  width: 100%;
+  position: absolute;
+  right: 10%;
 }
 
 .body-content1 {
-  /* background: rgba(2, 131, 185, 0.8); */
-
   background: rgb(2, 131, 185);
   background: linear-gradient(
     0deg,
@@ -399,22 +394,26 @@ button:not([id$="-btn"]):active {
     rgb(0, 0, 0) 50%,
     rgba(2, 131, 185, 0.8) 100%
   );
+  display: flex;
+  align-items: center;
 }
 
 .product-box-wrapper {
+  padding: 0rem 8rem;
   display: flex;
   justify-content: center;
-  gap: 10rem;
+  gap: 8rem;
 }
 
 .product {
   color: #fff;
-  background-color: #444;
+  background-color: rgba(68, 68, 68, 0.2);
+  border-radius: 4em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 4rem;
+  justify-content: flex-start;
+  gap: 6rem;
   padding: 12rem 8rem;
   text-align: center;
 }
@@ -430,7 +429,7 @@ button:not([id$="-btn"]):active {
 }
 
 .product img {
-  width: 30rem;
+  width: 20rem;
 }
 
 footer {
@@ -554,7 +553,7 @@ iframe {
 
 .night {
   position: relative;
-  width: 100%;
+  width: 50%;
   height: 100vh;
   transform: rotateZ(135deg);
 }
@@ -563,7 +562,7 @@ iframe {
   position: absolute;
   left: 50%;
   top: 50%;
-  height: 2px;
+  height: 0.2vh;
   background: linear-gradient(-45deg, #13e4e9, rgba(0, 0, 255, 0));
   border-radius: 999px;
   filter: drop-shadow(0 0 6px #699bff);
@@ -577,7 +576,7 @@ iframe {
   position: absolute;
   top: calc(50% - 1px);
   right: 0;
-  height: 2px;
+  height: 0.2vh;
   background: linear-gradient(
     -45deg,
     rgba(0, 0, 255, 0),
@@ -594,7 +593,7 @@ iframe {
   position: absolute;
   top: calc(50% - 1px);
   right: 0;
-  height: 2px;
+  height: 0.2vh;
   background: linear-gradient(
     -45deg,
     rgba(0, 0, 255, 0),
