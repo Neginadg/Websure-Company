@@ -15,17 +15,16 @@ html {
   height: 100vh;
   background-size: cover;
   background-position: center;
-
-  background: rgb(0, 0, 0);
-  background: radial-gradient(
-    circle,
-    rgba(0, 4, 9, 1) 90%,
-    rgba(3, 166, 214, 1) 100%
+  background: rgb(2, 131, 185);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 131, 185, 0.8) 0%,
+    rgba(5, 4, 0, 1) 50%
   );
-
   display: flex;
   flex-direction: column;
 }
+
 .hero,
 .body-content1,
 .body-content2 {
@@ -53,6 +52,34 @@ html {
 a {
   color: #fff;
   text-decoration: none;
+}
+
+.language-switch {
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  margin: 20px 0;
+}
+.language-switch button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: #f0e5eb;
+  padding: 0;
+  /* padding: 10px 20px;
+  margin: 0 10px; */
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.language-switch button img {
+  width: 30px;
+  height: auto;
+}
+
+.main-header {
+  display: flex;
+  justify-content: center;
 }
 
 nav {
@@ -197,11 +224,16 @@ footer {
   height: 50vh;
   color: #222;
   background-color: #f7f7f7;
+  background: linear-gradient(
+    180deg,
+    rgba(2, 131, 185, 0.8) 0%,
+    rgba(255, 255, 255) 100%
+  );
   padding: 10em 8em;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30em;
+  gap: 20em;
 }
 .footer-items {
   display: flex;
@@ -245,11 +277,6 @@ footer ul li a {
   color: #222;
 }
 
-/* .copy {
-  font-weight: 300;
-  letter-spacing: 0.2px;
-  font-size: 1.25rem;
-} */
 .social-links {
   display: flex;
   align-items: center;
