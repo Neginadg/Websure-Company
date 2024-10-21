@@ -81,14 +81,6 @@ a {
   justify-content: center;
 }
 
-a#logo {
-  display: none !important;
-}
-
-#logo::after {
-  content: "IDK";
-}
-
 nav {
   background-color: transparent;
   padding: 2rem 0;
@@ -117,6 +109,7 @@ nav a {
 }
 
 .nav-icon {
+  color: white;
   width: 1.5rem;
   height: 1.5rem;
   justify-content: center;
@@ -181,7 +174,7 @@ main {
 }
 
 .hero-heading h3 {
-  color: #abe6ee;
+  color: #c0e9ee;
   padding-left: 2rem;
   font-size: 3vh;
   font-weight: 300;
@@ -239,11 +232,11 @@ main {
   color: #fff;
 }
 
-.body-content1 .about .left button {
+.body-content1 .about .right button {
   font-size: 2vh;
   font-weight: 400;
   padding: 1em;
-  border-radius: 1em;
+  border-radius: 0.5em;
 }
 
 .body-content1 .about .right {
@@ -251,7 +244,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .body-content1 .about .right h2 {
@@ -282,10 +275,12 @@ main {
 
 button {
   background-color: rgba(133, 224, 252, 0.2);
+  background-color: transparent;
   color: #f0e5eb;
+  color: rgb(0, 173, 247);
   padding: 1em;
   border-radius: 1em;
-  border: none;
+  border: 1px solid rgb(0, 173, 247);
   letter-spacing: 0.05rem;
   font-size: 1.6rem;
   font-weight: 500;
@@ -312,27 +307,47 @@ button:not([id$="-btn"]):active {
 }
 
 .body-content2 {
+  perspective: 150rem;
   text-align: center;
   padding: 16rem 18rem;
   color: #fff;
   background: linear-gradient(
     180deg,
     rgb(0, 0, 0) 50%,
-    /* rgba(23, 30, 74, 1) 57%, */ rgba(2, 131, 185, 0.8) 100%
+    rgba(2, 131, 185, 0.8) 100%
   );
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   gap: 10rem;
+}
+
+.body-content2 .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.body-content2 .left .box {
+  color: rgb(0, 173, 247);
+  background-color: transparent;
+  border: 1px solid rgb(0, 173, 247);
+}
+
+.body-content2 img {
+  width: 60vh;
 }
 
 .body-content2 h2 {
   font-size: 7vh;
   font-weight: 400;
+  text-align: left;
 }
 
 .body-content2 p {
+  text-align: left;
   font-size: 2.5vh;
   font-weight: 300;
   letter-spacing: 0.05rem;
@@ -468,4 +483,41 @@ iframe {
   position: relative;
   width: 100%;
   height: 50vh;
+}
+
+/* Default state: hidden and transparent */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Fade in when the element becomes visible */
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Slide in from the left */
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-10%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.slide-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slide in from the right */
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(10%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.slide-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
 }

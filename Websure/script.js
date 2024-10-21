@@ -54,3 +54,34 @@ document.getElementById("english-btn").addEventListener("click", () => {
   updateContent("en");
 });
 updateContent(currentLanguage);
+
+// Select all elements with the 'fade-in' class
+const faders = document.querySelectorAll(".fade-in");
+const slider_right = document.querySelectorAll(".slide-in-right");
+const slider_left = document.querySelectorAll(".slide-in-left");
+
+// Create an Intersection Observer
+const appearOptions = {
+  threshold: 0.1, // Trigger animation when 10% of the element is visible
+};
+
+const appearOnScroll = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add("visible"); // Add visible class when the element comes into view
+    observer.unobserve(entry.target); // Stop observing once the animation is triggered
+  });
+}, appearOptions);
+
+// Observe each 'fade-in' element
+faders.forEach((fader) => {
+  appearOnScroll.observe(fader);
+});
+
+slider_right.forEach((slider) => {
+  appearOnScroll.observe(slider);
+});
+
+slider_left.forEach((slider) => {
+  appearOnScroll.observe(slider);
+});
