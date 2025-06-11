@@ -1,0 +1,30 @@
+name: Deploy to IIS Server
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Build React app
+      run: npm run build
+
+    - name: Deploy to IIS
+      run: |
+        dotnet tool install --global Microsoft.Web.Deployment
+        msdeploy -verb:sync -source:contentPath="./build" -dest:contentPath="${{ secrets.IIS_SITE_PATH }}",computerName="${{ secrets.IIS_SERVER }}",username="${{ secrets.IIS_USERNAME }}",password="${{ secrets.IIS_PASSWORD }}" -allowUntrusted

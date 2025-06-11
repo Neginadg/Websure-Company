@@ -12,10 +12,9 @@ export const ContactFormSection = styled("section")`
 export const FormContainer = styled("div")`
   max-width: 1000px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   gap: 4rem;
-  align-items: start;
+  align-items: center;
 
   @media only screen and (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -35,6 +34,7 @@ export const FormContent = styled("div")`
 `;
 
 export const FormTitle = styled("h2")`
+  text-align: center;
   font-size: 2rem;
   font-family: "Motiva Sans Bold", sans-serif;
   color: white;
@@ -53,6 +53,7 @@ export const InfoContent = styled("div")`
 `;
 
 export const InfoTitle = styled("h2")`
+  text-align: center;
   font-size: 2rem;
   font-family: "Motiva Sans Bold", sans-serif;
   color: white;

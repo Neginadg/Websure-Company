@@ -17,7 +17,7 @@ export const HeroSection = styled("section")`
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("/img/svg/graphs.svg") no-repeat center;
+    background: url("/Websure-Company/img/svg/graphs.svg") no-repeat center;
     background-size: cover;
     opacity: 0.05;
     z-index: 0;

@@ -35,9 +35,15 @@ const Header = ({ t }: { t: TFunction }) => {
     setVisibility(false);
   };
 
-  const MenuItem = () => {
+  const MenuItem = ({ direction }: { direction?: "row" | "column" }) => {
     return (
-      <div style={{ display: "flex", alignItems: "center" }}>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          flexDirection: direction || "row",
+        }}
+      >
         <CustomNavLinkSmall onClick={() => navigateTo("/")}>
           <Span>{t("Home")}</Span>
         </CustomNavLinkSmall>
@@ -111,7 +117,7 @@ const Header = ({ t }: { t: TFunction }) => {
               </Col>
             </Label>
           </Col>
-          <MenuItem />
+          <MenuItem direction="column" />
         </Drawer>
       </Container>
     </HeaderSection>

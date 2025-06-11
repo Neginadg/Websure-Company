@@ -26,11 +26,13 @@ const ContactHero = ({ t }: ContactHeroProps) => {
       icon: "📧",
       title: t("Email Us"),
       detail: "info@websuresoft.com",
+      type: "email",
     },
     {
       icon: "📞",
       title: t("Call Us"),
       detail: "+90 392 228 15 21",
+      type: "phone",
     },
   ];
 
@@ -60,7 +62,15 @@ const ContactHero = ({ t }: ContactHeroProps) => {
                     <ContactMethod>
                       <ContactIcon>{method.icon}</ContactIcon>
                       <ContactTitle>{method.title}</ContactTitle>
-                      <ContactDetail>{method.detail}</ContactDetail>
+                      <ContactDetail>
+                        {method.type === "email" ? (
+                          <a href={`mailto:${method.detail}`}>
+                            {method.detail}
+                          </a>
+                        ) : (
+                          <a href={`tel:${method.detail}`}>{method.detail}</a>
+                        )}
+                      </ContactDetail>
                     </ContactMethod>
                   </Fade>
                 ))}

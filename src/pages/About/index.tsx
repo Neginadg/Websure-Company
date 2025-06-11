@@ -11,6 +11,7 @@ interface AboutProps {
 }
 
 const About = ({ t }: AboutProps) => {
+  document.title = t("About Us - Websuresoft");
   return (
     <>
       <ScrollToTop />

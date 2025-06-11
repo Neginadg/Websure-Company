@@ -26,38 +26,45 @@ const Timeline = ({ t }: TimelineProps) => {
       ),
     },
     {
-      year: "1998",
+      year: "1993",
       title: t("First Major Product Launch"),
       description: t(
         "Launched our flagship insurance management system, becoming the preferred choice for local agencies."
       ),
     },
     {
-      year: "2005",
-      title: t("Market Leadership"),
-      description: t(
-        "Achieved 50% market share in TRNC insurance sector with innovative digital solutions."
-      ),
-    },
-    {
-      year: "2012",
+      year: "1995",
       title: t("Cloud Migration"),
       description: t(
         "Successfully transitioned all solutions to cloud-based architecture, ensuring scalability and security."
       ),
     },
     {
-      year: "2018",
+      year: "1998",
+      title: t("Market Leadership"),
+      description: t(
+        "Achieved 50% market share in TRNC insurance sector with innovative digital solutions."
+      ),
+    },
+    {
+      year: "2009",
       title: t("Mobile Revolution"),
       description: t(
         "Introduced mobile-first solutions and real-time processing capabilities for modern insurance needs."
       ),
     },
     {
+      year: "2018",
+      title: t("Online Revolution"),
+      description: t(
+        "Continuing to innovate with AI-powered solutions and serving 97% of the TRNC insurance market."
+      ),
+    },
+    {
       year: "2025",
       title: t("Future Vision"),
       description: t(
-        "Continuing to innovate with AI-powered solutions and serving 97% of the TRNC insurance market."
+        "Expanding our global footprint with cutting-edge insurance technology solutions."
       ),
     },
   ];

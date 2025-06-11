@@ -124,4 +124,15 @@ export const ContactDetail = styled("p")`
   font-size: 1rem;
   margin: 0;
   opacity: 0.9;
+
+  a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #2fc3ea;
+      text-decoration: underline;
+    }
+  }
 `;

@@ -54,22 +54,9 @@ const EnhancedContactForm = ({ t }: EnhancedContactFormProps) => {
     <ContactFormSection>
       <Container>
         <FormContainer>
-          <Fade direction="left" triggerOnce>
-            <FormContent>
-              <FormTitle>{t("Send us a message")}</FormTitle>
-              <FormDescription>
-                {t(
-                  "Fill out the form below and we'll get back to you as soon as possible. We're here to help with any questions about our insurance software solutions."
-                )}
-              </FormDescription>
-              <FormOnly />
-            </FormContent>
-          </Fade>
-
           <Fade direction="right" triggerOnce>
             <InfoContent>
               <InfoTitle>{t("Get in Touch")}</InfoTitle>
-
               {infoCards.map((card, index) => (
                 <Fade
                   key={index}
@@ -86,19 +73,6 @@ const EnhancedContactForm = ({ t }: EnhancedContactFormProps) => {
                   </InfoCard>
                 </Fade>
               ))}
-
-              {/* <Fade direction="up" delay={300} triggerOnce>
-                <WorkingHours>
-                  <WorkingHoursTitle>{t("Working Hours")}</WorkingHoursTitle>
-                  <WorkingHoursText>
-                    {t("Monday - Friday: 9:00 AM - 6:00 PM")}
-                  </WorkingHoursText>
-                  <WorkingHoursText>
-                    {t("Saturday: 9:00 AM - 1:00 PM")}
-                  </WorkingHoursText>
-                  <WorkingHoursText>{t("Sunday: Closed")}</WorkingHoursText>
-                </WorkingHours>
-              </Fade> */}
             </InfoContent>
           </Fade>
         </FormContainer>

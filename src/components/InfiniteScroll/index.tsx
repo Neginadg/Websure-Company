@@ -59,7 +59,7 @@ const InfiniteScroll = ({ t }: InfiniteScrollProps) => {
           {duplicatedLogos.map((logo, index) => (
             <LogoItem key={`${logo}-${index}`}>
               <LogoImage
-                src={`/img/logos/${logo}`}
+                src={`${process.env.PUBLIC_URL}/img/logos/${logo}`}
                 alt={`Partner logo ${index + 1}`}
                 loading="lazy"
               />

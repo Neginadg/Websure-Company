@@ -50,7 +50,6 @@ const Footer = ({ t }: { t: TFunction }) => {
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
               <Language>{t("Contact")}</Language>
-              <Large to="/contact">{t("Tell us everything")}</Large>
               <Para>
                 {t(`Do you have any question? Feel free to reach out.`)}
               </Para>
@@ -63,6 +62,16 @@ const Footer = ({ t }: { t: TFunction }) => {
               <Para>Kızılay Sk</Para>
               <Para>Betoncu Apt. No:4</Para>
               <Para>Lefkoşa - KKTC, Mersin 10, Türkiye</Para>
+              <Para style={{ display: "flex", alignItems: "baseline" }}>
+                <a
+                  style={{ display: "flex", alignItems: "center", gap: "5px" }}
+                  target="_blank"
+                  href="https://www.google.com/maps?ll=35.185413,33.363749&z=19&t=m&hl=en&gl=TR&mapclient=embed&cid=7541843520000004584"
+                >
+                  <SvgIcon src="location.svg" width="20px" height="20px" />
+                  {t("Find Us")}
+                </a>
+              </Para>
               {/* </Col> */}
               {/* <Col lg={6} md={6} sm={12} xs={12}> */}
               <Language style={{ marginTop: "2rem" }}>

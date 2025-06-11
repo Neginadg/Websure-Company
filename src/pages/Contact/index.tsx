@@ -12,6 +12,7 @@ interface ContactPageProps {
 }
 
 const ContactPage = ({ t }: ContactPageProps) => {
+  document.title = t("Contact Us - Websuresoft");
   return (
     <>
       <ScrollToTop />

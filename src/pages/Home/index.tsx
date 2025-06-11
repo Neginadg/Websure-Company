@@ -10,7 +10,10 @@ const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 const InfiniteScroll = lazy(() => import("../../components/InfiniteScroll"));
 
+// add tab title and description
+
 const Home = () => {
+  document.title = "Home - Websuresoft";
   return (
     <Container>
       <ScrollToTop />
