@@ -36,20 +36,6 @@ We offer comprehensive web solutions with multi-language support, smooth animati
 - [Performance](#performance)
 - [Contributing](#contributing)
 - [License](#license)
-
-## ✨ Features
-
-- **🎨 Modern Design** – Clean, professional, and mobile-first responsive design
-- **⚡ High Performance** – Optimized for speed with perfect Google Lighthouse scores
-- **� Multi-language Support** – Built-in internationalization (English, Spanish, Turkish)
-- **📱 Fully Responsive** – Works seamlessly on desktop, tablet, and mobile devices
-- **🎭 Smooth Animations** – Beautiful reveal animations using react-awesome-reveal
-- **📝 Contact Form** – Integrated EmailJS contact form with validation
-- **🔧 TypeScript** – Full TypeScript support for better development experience
-- **📦 Modular Components** – Reusable, well-structured React components
-- **🎯 SEO Optimized** – Proper meta tags and semantic HTML structure
-- **📊 JSON Content Management** – Easy content updates without coding knowledge
-
 ## 🛠️ Tech Stack
 
 - **Frontend Framework**: React 18.2.0
@@ -73,7 +59,7 @@ WebsureSoft achieves perfect Google Lighthouse scores across all metrics:
 
 ## 🌐 Live Website
 
-Visit our website: [WebsureSoft.com](https://neginadg.github.io/Websure-Company)
+Visit our website: [www.websuresoft.com](https://neginadg.github.io/Websure-Company)
 
 ## � Development Setup
 
@@ -140,7 +126,6 @@ Content is available in multiple languages:
 ```
 src/locales/
 ├── en/    # English
-├── es/    # Spanish
 └── tr/    # Turkish
 ```
 
