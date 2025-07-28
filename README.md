@@ -59,7 +59,7 @@ WebsureSoft achieves perfect Google Lighthouse scores across all metrics:
 
 ## 🌐 Live Website
 
-Visit our website: [www.websuresoft.com](https://neginadg.github.io/Websure-Company)
+Visit our website: [www.websuresoft.com]
 
 ## � Development Setup
 
